@@ -90,10 +90,16 @@
   </target>
 
   <target name="finz-build">
-    <!--
     <concat destfile="${basedir}/public/c/webcommon.js" append="true">
+      <fileset file="${basedir}/public/vendors/underscore/underscore-min.js"/>
+      <fileset file="${basedir}/public/vendors/jquery/jquery-2.1.1.min.js"/>
+      <fileset file="${basedir}/public/vendors/l10njs/l10n.min.js"/>
+      <fileset file="${basedir}/public/vendors/mustache/mustache.js"/>
+      <!--
+      <fileset file="${basedir}/public/vendors/modernizr/modernizr.custom.js"/>
+      -->
+      <fileset file="${basedir}/public/vendors/dbg/dbg.js"/>
     </concat>
-    -->
   </target>
 
   <!-- target: test-build
@@ -142,6 +148,8 @@
 
   <target name="pre-build">
     <mkdir dir="${basedir}/POD-INF/classes" />
+    <mkdir dir="${basedir}/POD-INF/lib" />
+    <mkdir dir="${src.dir}/java" />
     <mkdir dir="${build.dir}"/>
     <mkdir dir="${build.dir}/web_scripts"/>
     <mkdir dir="${build.dir}/web_styles"/>

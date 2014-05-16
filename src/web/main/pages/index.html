@@ -1,5 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 
 <head>
 
@@ -11,15 +16,16 @@
   <meta charset="utf-8"/>
   <meta name="description" content=""/>
 
+  <link rel="stylesheet" href="/public/vendors/foundation/css/normalize.css"/>
   <link rel="stylesheet" href="/public/vendors/foundation/css/foundation.min.css"/>
   <link rel="stylesheet" media="screen" href="/public/c/webcommon.css"/>
-  <link rel="stylesheet" media="screen" href="/public/styles/main.css"/>
+  <link rel="stylesheet" media="screen" href="/public/styles/main/site.css"/>
 
   <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'/>
   <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'/>
   <link rel="shortcut icon" type="image/png" href="/public/media/favicon.png"/>
 
-  <script type="text/javascript" src="/public/vendors/modernizr/modernizr.custom.js"></script>
+  <script type="text/javascript" src="/public/vendors/foundation/js/vendor/modernizr.js"></script>
 
 </head>
 
@@ -120,9 +126,14 @@
 
   <div id="map"></div>
 
-  <script type="text/javascript" src="/public/vendors/foundation/js/foundation.min.js"></script>
   <script type="text/javascript" src="/public/c/webcommon.js"></script>
-  <script src="/public/scripts/main.js"></script>
+  <script type="text/javascript" src="/public/vendors/jquery_plugins/jquery.easing.min.js"></script>
+  <script type="text/javascript" src="/public/vendors/foundation/js/vendor/fastclick.js"></script>
+  <script type="text/javascript" src="/public/vendors/foundation/js/foundation.min.js"></script>
+  <script type="text/javascript">
+    $(document).foundation();
+  </script>
+  <script src="/public/scripts/main/site.js"></script>
 
 </body>
 </html>
