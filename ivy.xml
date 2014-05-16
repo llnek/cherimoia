@@ -1,6 +1,6 @@
 <ivy-module version="2.0">
 
-  <info organisation="cherimoia" module="cherimoia"/>
+  <info organisation="com.cherimoia" module="cherimoia"/>
 
   <configurations defaultconf="libjar">
     <conf name="libjar"  description="the core jar library"/>
@@ -8,7 +8,7 @@
   </configurations>
 
   <publications>
-    <artifact name="cherimoia" type="jar" conf="libjar" ext="jar"/>
+    <artifact name="cherimoia-website" type="jar" conf="libjar" ext="jar"/>
   </publications>
 
   <dependencies defaultconf="libjar">

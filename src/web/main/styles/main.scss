@@ -1,8 +1,8 @@
 // Variables
 
-@primary: #28c3ab;
-@dark: #000;
-@light: #fff;
+$primary: #28c3ab;
+$dark: #000;
+$light: #fff;
 
 // LESS
 
@@ -10,8 +10,8 @@ body {
     width: 100%;
     height: 100%;
     font-family: "Lora","Helvetica Neue",Helvetica,Arial,sans-serif;
-    color: @light;
-    background-color: @dark;
+    color: $light;
+    background-color: $dark;
 }
 
 html {
@@ -19,7 +19,7 @@ html {
     height: 100%;
 }
 
-// Typhography 
+// Typhography
 
 h1,
 h2,
@@ -49,7 +49,7 @@ p {
 }
 
 a {
-    color: @primary;
+    color: $primary;
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
@@ -58,21 +58,21 @@ a {
 a:hover,
 a:focus {
     text-decoration: none;
-    color: darken(@primary, 20%);
+    color: darken($primary, 20%);
 }
 
 .light {
     font-weight: 400;
 }
 
- // Navigation 
+ // Navigation
 
  .navbar {
     margin-bottom: 0;
     border-bottom: 1px solid rgba(255,255,255,0.3);
     text-transform: uppercase;
     font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
-    background-color: @dark;
+    background-color: $dark;
 }
 
 .navbar-brand {
@@ -84,7 +84,7 @@ a:focus {
 }
 
 .navbar-custom a {
-    color: @light;
+    color: $light;
 }
 
 .navbar-custom .nav li a {
@@ -103,7 +103,7 @@ a:focus {
 .navbar-toggle {
     padding: 4px 6px;
     font-size: 16px;
-    color: @light;
+    color: $light;
 }
 
 .navbar-toggle:focus,
@@ -124,7 +124,7 @@ a:focus {
 
     .top-nav-collapse {
         padding: 0;
-        background-color: @dark;
+        background-color: $dark;
     }
 
     .navbar-custom.top-nav-collapse {
@@ -132,7 +132,7 @@ a:focus {
     }
 }
 
- // Full Page Image Intro Section 
+ // Full Page Image Intro Section
 
  .intro {
     display: table;
@@ -140,9 +140,9 @@ a:focus {
     height: auto;
     padding: 100px 0;
     text-align: center;
-    color: @light;
+    color: $light;
     background: url(../img/intro-bg.jpg) no-repeat bottom center scroll;
-    background-color: @dark;
+    background-color: $dark;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -182,10 +182,10 @@ a:focus {
     height: 70px;
     margin-top: 15px;
     padding: 7px 16px;
-    border: 2px solid @light;
+    border: 2px solid $light;
     border-radius: 35px;
     font-size: 40px;
-    color: @light;
+    color: $light;
     background: transparent;
     -webkit-transition: background .3s ease-in-out;
     -moz-transition: background .3s ease-in-out;
@@ -195,7 +195,7 @@ a:focus {
 .btn-circle:hover,
 .btn-circle:focus {
     outline: none;
-    color: @light;
+    color: $light;
     background: rgba(255,255,255,0.1);
 }
 
@@ -217,7 +217,7 @@ a:focus {
     -moz-animation-timing-function: linear;
 }
 
-@-webkit-keyframes pulse {    
+@-webkit-keyframes pulse {
     0 {
         -webkit-transform: scale(1);
         transform: scale(1);
@@ -234,7 +234,7 @@ a:focus {
     }
 }
 
-@-moz-keyframes pulse {    
+@-moz-keyframes pulse {
     0 {
         -moz-transform: scale(1);
         transform: scale(1);
@@ -251,7 +251,7 @@ a:focus {
     }
 }
 
- // Content Sections 
+ // Content Sections
 
  .content-section {
     padding-top: 100px;
@@ -260,9 +260,9 @@ a:focus {
 .download-section {
     width: 100%;
     padding: 50px 0;
-    color: @light;
+    color: $light;
     background: url(../img/downloads-bg.jpg) no-repeat center center scroll;
-    background-color: @dark;
+    background-color: $dark;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -290,7 +290,7 @@ a:focus {
     }
 }
 
- // Buttons 
+ // Buttons
 
  .btn {
     text-transform: uppercase;
@@ -302,17 +302,17 @@ a:focus {
 }
 
 .btn-default {
-    border: 1px solid @primary;
-    color: @primary;
+    border: 1px solid $primary;
+    color: $primary;
     background-color: transparent;
 }
 
 .btn-default:hover,
 .btn-default:focus {
-    border: 1px solid @primary;
+    border: 1px solid $primary;
     outline: none;
-    color: @dark;
-    background-color: @primary;
+    color: $dark;
+    background-color: $primary;
 }
 
 .btn-huge {
@@ -342,7 +342,7 @@ a:focus {
     }
 }
 
- // Highlight Color Customization 
+ // Highlight Color Customization
 
 ::-moz-selection {
     text-shadow: none;
