@@ -8,17 +8,24 @@
 
 <head>
 
-
   <title>Cherimoia | Mobile &amp; Web Applications</title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
   <meta charset="utf-8"/>
   <meta name="description" content=""/>
+  <meta name="keywords" content="" />
 
   <link rel="stylesheet" href="/public/vendors/foundation/css/normalize.css"/>
   <link rel="stylesheet" href="/public/vendors/foundation/css/foundation.min.css"/>
   <link rel="stylesheet" media="screen" href="/public/c/webcommon.css"/>
+
+  <link rel="stylesheet" media="screen" href="/public/vendors/font-awesome/css/font-awesome.min.css"/>
+  <link rel="stylesheet" href="/public/vendors/revealjs/css/reveal.min.css" />
+  <link rel="stylesheet" media="screen" href="/public/vendors/fancybox/css/jquery.fancybox.css" />
+  <link rel="stylesheet" href="/public/vendors/fancybox/css/jquery.fancybox-buttons.css" />
+  <link rel="stylesheet" href="/public/vendors/animate/animate.css" >
+
   <link rel="stylesheet" media="screen" href="/public/styles/main/site.css"/>
 
   <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'/>
@@ -29,108 +36,549 @@
 
 </head>
 
-<body id="page-top" data-spy="scroll" data-target=".navbar-custom">
+<body >
 
-    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
-        <div class="container">
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-                    <i class="fa fa-bars"></i>
-                </button>
-                <a class="navbar-brand" href="#page-top">
-                    <i class="fa fa-play-circle"></i>  <span class="light">Start</span> Bootstrap
+
+    <div class="wrapper" >
+      <!-- Header and Nav -->
+      <div class="fixed nav-custom" >
+        <nav class="top-bar row">
+          <ul class="title-area">
+            <!-- Title Area -->
+            <li class="name">
+              <h1>
+                <a href="index.html#" class="logo">
+                  <i class="icon-magic"></i> Simply Wonder
                 </a>
-            </div>
+              </h1>
+            </li>
+            <li class="toggle-topbar menu-icon"><a href="index.html#"><span>Menu</span></a></li>
+          </ul>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-                <ul class="nav navbar-nav">
-                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#about">About</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#download">Download</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
+          <section class="top-bar-section"  >
+            <!-- Right Nav Section -->
+            <ul class="right" id="top-nav">
+              <li class="divider"></li>
+              <li><a href="index.html#home" id="home-link" class="nav-link" > Home </a></li>
+
+              <li class="divider"> </li>
+              <li ><a href="index.html#about" id="about-link" class="nav-link" > About Us</a></li>
+
+              <li class="divider"></li>
+              <li ><a href="index.html#portfolio"  id="portfolio-link" class="nav-link"> Portfolio</a></li>
+
+              <li class="divider"></li>
+              <li ><a href="index.html#contact" id="contact-link" class="nav-link"> Contact Us</a></li>
+
+              <li class="divider"></li>
+              <li ><a data-reveal-id="quote" href="#quote"> Request a Quote </a></li>
+            </ul>
+          </section>
+        </nav>
+     </div>
+      <!-- End Header and Nav -->
+
+      <!--Banner Start here-->
+    <div class="row" id="home">
+      <div class="reveal">
+        <!-- Any section element inside of this container is displayed as a slide -->
+        <div class="slides">
+          <section>
+            <h2>We Provide <br/> Solution for a Smart WEBSITES</h2><br />
+              <div class="reveal-images">
+                <img class="animated fadeInUp delay1" src="img/html5.png" alt="HTML5" />
+                <img class="animated fadeInUp delay2" src="img/css3.png" alt="CSS" />
+                <img class="animated fadeInUp delay3" src="img/zurb-foundation.png" alt="Twitter Bootstrap" />
+              </div>
+          </section>
+          <section>
+            <h2>Hello...</h2>
+            <h2>
+              <span class="big-text">We love</span> to create <span class="big-text">clean</span>, <span class="big-text">Sementic</span>, <br />
+              <span class="line-through">Pixel Perfect</span> <span class="big-text">RESPONSIVE</span> <br />
+              WEBSITES.
+            </h2>
+          </section>
+          <section>
+              <div class="reveal-images">
+                <img class="animated fadeInUp delay1" src="img/responsive.png" alt="" />
+              </div>
+          </section>
         </div>
-        <!-- /.container -->
-    </nav>
 
-    <section class="intro">
-        <div class="intro-body">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8 col-md-offset-2">
-                        <h1 class="brand-heading">Grayscale</h1>
-                        <p class="intro-text">A free, premium quality, responsive one page Bootstrap theme created by Start Bootstrap.</p>
-                        <div class="page-scroll">
-                            <a href="#about" class="btn btn-circle">
-                                <i class="fa fa-angle-double-down animated"></i>
-                            </a>
-                        </div>
+      </div>
+      <div class="controller">
+          <a class="controller-left navigate-left" href="index.html#"><i class="icon-chevron-sign-left"></i></a>
+          <a class="controller-right navigate-right" href="index.html#"><i class=" icon-chevron-sign-right"></i></a>
+      </div>
+    </div>
+    <!--Banner Ends here-->
+
+        <!--features Start here-->
+      <section id="features">
+        <div class="row">
+           <div class="small-6 large-3 columns text-center features-box">
+             <div class="features-img text-center">
+               <i class="icon-check-sign icon-circled icon-64"></i>
+             </div>
+             <div class="features-details">
+               <h4>Responsive theme</h4>
+               <p>Lorem ipsum dolor sit has ei ipsum  amet, has ei ipsum scaevola deseruisse am sea facilisis.</p>
+             </div>
+           </div>
+           <div class="small-6 large-3 columns text-center features-box">
+             <div class="features-img text-center">
+               <i class="icon-mobile-phone icon-circled icon-64"></i>
+             </div>
+             <div class="features-details">
+               <h4>Mobile Ready</h4>
+               <p>Lorem ipsum dolor sit has ei ipsum  amet, has ei ipsum scaevola deseruisse am sea facilisis.</p>
+             </div>
+           </div>
+           <div class="small-6 large-3 columns text-center features-box">
+             <div class="features-img text-center">
+               <i class="icon-html5 icon-circled icon-64"></i>
+             </div>
+             <div class="features-details">
+               <h4>HTML5 &amp; CSS 3</h4>
+               <p>Lorem ipsum dolor sit has ei ipsum  amet, has ei ipsum scaevola deseruisse am sea facilisis.</p>
+             </div>
+           </div>
+           <div class="small-6 large-3 columns text-center features-box">
+             <div class="features-img text-center">
+               <i class=" icon-suitcase icon-circled icon-64"></i>
+             </div>
+             <div class="features-details">
+               <h4>Corporate Business</h4>
+               <p>Lorem ipsum dolor sit has ei ipsum  amet, has ei ipsum scaevola deseruisse am sea facilisis.</p>
+             </div>
+           </div>
+        </div>
+      </section>
+      <!--features End here-->
+       <hr />
+      <!--About Start here-->
+      <section id="about" class="page-section">
+        <div class="row">
+          <div class="small-12 large-12 columns text-center">
+            <h2 class="section-title">A LITTLE  ABOUT US</h2>
+          </div>
+        </div>
+        <div class="row section-content">
+          <div class="small-12 large-8 columns">
+            <h3>Heading goes here </h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua nisi ut aliquip  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ex ea commodo consequat. Duis aute irure dolor in  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+          <div class="small-12 large-4 columns">
+            <div class="widget-box">
+            <div class="widget-title">
+              <h4>WE ARE GOOD AT...</h4>
+            </div>
+            <div class="widget-container vital-stats">
+              <div class="row">
+                <div class="large-4 columns">
+                  <label>HTML</label>
+                </div>
+                <div class="large-8 columns">
+                  <div class="round progress success"><span class="meter" style="width: 90%"></span></div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="large-4 columns">
+                  <label>CSS</label>
+                </div>
+                <div class="large-8 columns">
+                  <div class="round progress alert"><span class="meter" style="width: 80%"></span></div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="large-4 columns">
+                  <label>JavaScript</label>
+                </div>
+                <div class="large-8 columns">
+                  <div class="round progress"><span class="meter" style="width: 95%"></span></div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="large-4 columns">
+                  <label>Photoshop</label>
+                </div>
+                <div class="large-8 columns">
+                  <div class="round progress success"><span class="meter" style="width:70%"></span></div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="large-4 columns">
+                  <label>Wordpress</label>
+                </div>
+                <div class="large-8 columns">
+                  <div class="round progress alert"><span class="meter" style="width:50%"></span></div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="large-4 columns">
+                  <label>Flash AS2</label>
+                </div>
+                <div class="large-8 columns">
+                  <div class="round progress success"><span class="meter" style="width:77%"></span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+
+        <!-- Our Team Start here -->
+        <div id="our-team">
+            <div class="row">
+                <h2 class="small-12 large-12 columns text-center">
+                  Our Team
+                </h2>
+            </div>
+            <div class="row">
+                 <div class="small-12 large-3 columns">
+                  <div class="our-team">
+                            <div class="our-team-img"><img src="img/team_1.jpg" alt="" class=""></div>
+                            <div class="caption">
+                    <h6>Name here, CEO</h6>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam viverra mauris id eros.</p>
+                    <div class="social-link-small">
+                        <a href="index.html#" class="button secondary btn-grey icon-round"><i class="icon-facebook"></i></a>
+                        <a href="index.html#" class="button secondary btn-grey icon-round"><i class="icon-twitter"></i></a>
+                        <a href="index.html#" class="button secondary btn-grey icon-round"><i class="icon-linkedin"></i></a>
+                        <a href="index.html#" class="button secondary btn-grey icon-round"><i class="icon-pinterest"></i></a>
                     </div>
+                            </div>
+                          </div>
                 </div>
-            </div>
-        </div>
-    </section>
 
-    <section id="about" class="container content-section text-center">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                <h2>About Grayscale</h2>
-                <p>Grayscale is a premium quality, free Bootstrap 3 theme created by Start Bootstrap. It can be yours right now, all you need to do is download the template on the preview page. You can use this template for any purpose, personal or commercial.</p>
-                <p>This striking, black and white theme features stock photographs by <a href="http://gratisography.com/">Gratisography</a> along with a custom Google Map skin courtesy of <a href="http://snazzymaps.com/">Snazzy Maps</a>.</p>
-                <p>With this template, just the slightest splash of color can make a huge impact on the overall presentation and design.</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="download" class="content-section text-center">
-        <div class="download-section">
-            <div class="container">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <h2>Download Grayscale</h2>
-                    <p>You can download Grayscale for free on the download page at Start Bootstrap. You can also get the source code directly from GitHub if you prefer. Additionally, Grayscale is the first Start Bootstrap theme to come with a LESS file for easy color customization!</p>
-                    <a href="http://startbootstrap.com/grayscale" class="btn btn-default btn-lg">Visit Download Page</a>
+                <div class="small-12 large-3 columns">
+                  <div class="our-team">
+                            <div class="our-team-img"><img src="img/team_2.jpg" alt="" class=""></div>
+                            <div class="caption">
+                                <h6>Name here, CEO</h6>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam viverra mauris id eros.</p>
+                    <div class="social-link-small">
+                        <a href="index.html#" class="button secondary btn-grey icon-round"><i class="icon-facebook"></i></a>
+                        <a href="index.html#" class="button secondary btn-grey icon-round"><i class="icon-twitter"></i></a>
+                        <a href="index.html#" class="button secondary btn-grey icon-round"><i class="icon-linkedin"></i></a>
+                        <a href="index.html#" class="button secondary btn-grey icon-round"><i class="icon-pinterest"></i></a>
+                    </div>
+                            </div>
+                          </div>
                 </div>
+
+                <div class="small-12 large-3 columns">
+                  <div class="our-team">
+                            <div class="our-team-img"><img src="img/team_3.jpg" alt="" class=""></div>
+                            <div class="caption">
+                                <h6>Name here, CEO</h6>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam viverra mauris id eros.</p>
+                                <div class="social-link-small">
+                        <a href="index.html#" class="button secondary btn-grey icon-round"><i class="icon-facebook"></i></a>
+                        <a href="index.html#" class="button secondary btn-grey icon-round"><i class="icon-twitter"></i></a>
+                        <a href="index.html#" class="button secondary btn-grey icon-round"><i class="icon-linkedin"></i></a>
+                        <a href="index.html#" class="button secondary btn-grey icon-round"><i class="icon-pinterest"></i></a>
+                    </div>
+                            </div>
+                          </div>
+                </div>
+
+                <div class="small-12 large-3 columns">
+                  <div class="our-team">
+                            <div class="our-team-img"><img src="img/team_4.jpg" alt=""></div>
+                            <div class="caption">
+                                <h6>Name here, CEO</h6>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam viverra mauris id eros.</p>
+                                <div class="social-link-small">
+                        <a href="index.html#" class="button secondary btn-grey icon-round"><i class="icon-facebook"></i></a>
+                        <a href="index.html#" class="button secondary btn-grey icon-round"><i class="icon-twitter"></i></a>
+                        <a href="index.html#" class="button secondary btn-grey icon-round"><i class="icon-linkedin"></i></a>
+                        <a href="index.html#" class="button secondary btn-grey icon-round"><i class="icon-pinterest"></i></a>
+                    </div>
+                            </div>
+                          </div>
+                </div>
+            </div><!-- End .row -->
+          </div>
+          <!-- Our Team Start here -->
+
+      </section>
+      <!--About End here-->
+
+       <hr />
+
+        <!--Portfolio Start here-->
+        <section id="portfolio" class="page-section">
+          <div class="row">
+          <h2 class="section-title text-center">Portfolio</h2>
+            <div class="small-6 large-3 column gallery-item text-center">
+                     <a class="fancybox" href="img/work/img_1.jpg" data-fancybox-group="gallery">
+                         <img class="img-responsive" src="img/work/th_img_1.jpg" alt="Picture Title Goes Here">
+                        <div class="zoom-icon"></div>
+                     </a>
+                     <h4>Title goes Here</h4>
+                     <p><i>Web</i></p>
+           </div>
+           <div class="small-6 large-3 column gallery-item text-center">
+                     <a class="fancybox" href="img/work/img_2.jpg" data-fancybox-group="gallery">
+                         <img class="img-responsive" src="img/work/th_img_2.jpg" alt="Picture Title Goes Here">
+                        <div class="zoom-icon"></div>
+                     </a>
+                     <h4>Title goes Here</h4>
+                     <p><i>E-Commerce</i></p>
+           </div>
+           <div class="small-6 large-3 column gallery-item text-center">
+                     <a class="fancybox" href="img/work/img_3.jpg" data-fancybox-group="gallery">
+                         <img class="img-responsive" src="img/work/th_img_3.jpg" alt="Picture Title Goes Here">
+                        <div class="zoom-icon"></div>
+                     </a>
+                     <h4>Title goes Here</h4>
+                     <p><i>Android app</i></p>
+           </div>
+           <div class="small-6 large-3 column gallery-item text-center">
+                     <a class="fancybox" href="img/work/img_1.jpg" data-fancybox-group="gallery">
+                         <img class="img-responsive" src="img/work/th_img_1.jpg" alt="Picture Title Goes Here">
+                        <div class="zoom-icon"></div>
+                     </a>
+                     <h4>Title goes Here</h4>
+                     <p><i>Designer</i></p>
+           </div>
+           <div class="small-6 large-3 column gallery-item text-center">
+                     <a class="fancybox" href="img/work/img_2.jpg" data-fancybox-group="gallery">
+                         <img class="img-responsive" src="img/work/th_img_2.jpg" alt="Picture Title Goes Here">
+                        <div class="zoom-icon"></div>
+                     </a>
+                     <h4>Title goes Here</h4>
+                     <p><i>Web</i></p>
+           </div>
+           <div class="small-6 large-3 column gallery-item text-center">
+                     <a class="fancybox" href="img/work/img_4.jpg" data-fancybox-group="gallery">
+                         <img class="img-responsive" src="img/work/th_img_4.jpg" alt="Picture Title Goes Here">
+                        <div class="zoom-icon"></div>
+                     </a>
+                     <h4>Title goes Here</h4>
+                     <p><i>Designer</i></p>
+           </div>
+           <div class="small-6 large-3 column gallery-item text-center">
+                     <a class="fancybox" href="img/work/img_3.jpg" data-fancybox-group="gallery">
+                         <img class="img-responsive" src="img/work/th_img_3.jpg" alt="Picture Title Goes Here">
+                        <div class="zoom-icon"></div>
+                     </a>
+                     <h4>Title goes Here</h4>
+                     <p><i>Android app</i></p>
+           </div>
+           <div class="small-6 large-3 column gallery-item text-center">
+                     <a class="fancybox" href="img/work/img_2.jpg" data-fancybox-group="gallery">
+                         <img class="img-responsive" src="img/work/th_img_2.jpg" alt="Picture Title Goes Here">
+                        <div class="zoom-icon"></div>
+                     </a>
+                     <h4>Title goes Here</h4>
+                     <p><i>ASP.net</i></p>
+           </div>
+          </div>
+
+          <!-- Client Logo row of columns -->
+          <div class="row">
+                <div class="our-clients">
+                  <div class="small-6 large-2 column">
+                    <img class="img-responsive grayscale" src="img/client-logo-03.png" alt="">
+                  </div>
+                  <div class="small-6 large-2 column">
+                    <img class="img-responsive grayscale" src="img/client-logo-04.png" alt="">
+                  </div>
+                  <div class="small-6 large-2 column">
+                    <img class="img-responsive grayscale" src="img/client-logo-01.png" alt="">
+                  </div>
+                  <div class="small-6 large-2 column">
+                    <img class="img-responsive grayscale" src="img/client-logo-02.png" alt="">
+                  </div>
+                  <div class="small-6 large-2 column">
+                    <img class="img-responsive grayscale" src="img/client-logo-03.png" alt="">
+                  </div>
+                  <div class="small-6 large-2 column">
+                    <img class="img-responsive grayscale" src="img/client-logo-04.png" alt="">
+                  </div>
+                    </div>
+           </div><!-- End Client logo-->
+        </section>
+        <!--Portfolio end here-->
+
+         <hr />
+        <!--Contact Start here-->
+        <section id="contact" class="page-section">
+          <!-- Google Maps container starts here -->
+          <div class="row">
+          <h2 class="section-title text-center">Contact Us</h2>
+          <div class="col-sm-12 col-md-12">
+            <div class="map-container">
+              <div class="gmapfixed_block">
+                <div id="googlemaps" class="google-map google-map-full"></div>
+              </div>
             </div>
-        </div>
-    </section>
+          </div>
+          </div>
+          <!-- Google Maps container End here -->
 
-    <section id="contact" class="container content-section text-center">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                <h2>Contact Start Bootstrap</h2>
-                <p>Feel free to email us to provide some feedback on our templates, give us suggestions for new templates and themes, or to just say hello!</p>
-                <p>feedback@startbootstrap.com</p>
-                <ul class="list-inline banner-social-buttons">
-                    <li><a href="https://twitter.com/SBootstrap" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
-                    </li>
-                    <li><a href="https://github.com/IronSummitMedia/startbootstrap" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
-                    </li>
-                    <li><a href="https://plus.google.com/+Startbootstrap/posts" class="btn btn-default btn-lg"><i class="fa fa-google-plus fa-fw"></i> <span class="network-name">Google+</span></a>
-                    </li>
-                </ul>
+          <div class="row">
+            <div class="small-12 large-4  large-offset-2 columns page-section">
+              <h3>Contact Info</h3>
+              <p>
+                <b>Company Name</b>
+              </p>
+              <p>
+                30 South Park Avenue <br />
+
+                San Francisco, CA 94108, USA<br />
+
+                Phone: (123) 456-7890<br />
+
+                Fax: +08 (123) 456-7890<br />
+
+                Email: contact@companyname.com<br />
+
+                Web: companyname.com<br />
+              </p>
+                      <div class="social-link-small">
+                <a href="index.html#" class="button secondary btn-grey icon-round"><i class="icon-facebook"></i></a>
+                <a href="index.html#" class="button secondary btn-grey icon-round"><i class="icon-twitter"></i></a>
+                <a href="index.html#" class="button secondary btn-grey icon-round"><i class="icon-linkedin"></i></a>
+                <a href="index.html#" class="button secondary btn-grey icon-round"><i class="icon-pinterest"></i></a>
+              </div>
+          </div>
+
+          <!--Contact form Start here-->
+          <div class="small-12 large-6 columns page-section">
+             <div class="widget">
+            <h4>Contact us</h4>
+              <form class="contactform" data-abide>
+                        <div class="item item-pair">
+                          <label for="FullName">Full Name
+                            <input type="text" name="FullName" id="FullName" class="small-input cat_textbox" required   pattern="[a-zA-Z]+"  maxlength="255">
+                             <small class="error small-input">Name is required and must be a string.</small>
+                          </label>
+                          <label for="EmailAddress">Email Address
+                            <input type="text" name="EmailAddress" id="EmailAddress" class="small-input cat_textbox" maxlength="255" required  >
+                             <small class="error small-input">An email address is required.</small>
+                          </label>
+                        </div>
+                        <div class="item">
+                          <label for="Website">Website
+                            <input type="text" name="Website" id="Website" class="small-input cat_textbox" maxlength="255">
+                          </label>
+                        </div>
+                        <div class="item">
+                          <label>Comments</label>
+                          <textarea  cols="10" name="Msg" rows="4" class="cat_listbox" required ></textarea>
+                          <small class="error">Please enter your comments</small>
+                        </div>
+                        <div class="item">
+                          <input class="button alert small" type="submit" value="Submit" id="catwebformbutton">
+                        </div>
+                      </form>
             </div>
-        </div>
-    </section>
+          </div>
+          <!--Contact form End here-->
+          </div> <!--End .row-->
+        </section>
+        <!--Contact End here-->
 
-  <div id="map"></div>
+         <!--Footer Start here-->
+        <footer class="footer">
+        <p class="text-center">
+          <!-- Copyright information. You can remove my site link. -->
+          Copyright © <a href="index.html#">Your Site</a> | Designed by <a href="http://ad-says.com">AdSays Creation Pvt. Ltd.</a>
+        </p>
+      </footer>
+       <!--Footer End here-->
 
-  <script type="text/javascript" src="/public/c/webcommon.js"></script>
-  <script type="text/javascript" src="/public/vendors/jquery_plugins/jquery.easing.min.js"></script>
-  <script type="text/javascript" src="/public/vendors/foundation/js/vendor/fastclick.js"></script>
-  <script type="text/javascript" src="/public/vendors/foundation/js/foundation.min.js"></script>
-  <script type="text/javascript">
+
+    </div><!--End .wrapper-->
+
+
+
+    <div id="quote" class="reveal-modal small">
+        <h3>Request a Quote</h3>
+      <form action="http://www.ad-says.com/signin" method="post" class="form-stacked">
+
+                    <div class="clearfix">
+                      <div class="input">
+                        <input name="name" type="text" placeholder="Name" required="">
+                      </div>
+                    </div>
+                     <div class="clearfix">
+                      <div class="input">
+                        <input name="emai" type="email" placeholder="Your Email Address" required="">
+                      </div>
+                    </div>
+                     <div class="clearfix">
+                      <div class="input">
+                        <input name="company" type="text" placeholder="Company Name">
+                      </div>
+                    </div>
+
+                     <div class="clearfix">
+                      <div class="input">
+                        <input name="number" type="tel" placeholder="Contact Number">
+                      </div>
+                    </div>
+                     <div class="clearfix">
+                      <div class="input">
+                        <select name="pbudge" class="input-medium">
+                              <option value=""> Select Project type </option>
+                                <option value="Website">Website</option>
+                                <option value="Mobile Application">Mobile Application</option>
+                                <option value="Design">Design</option>
+                                <option value="Photography">Photography</option>
+                                <option value="Destop Application">Destop Application</option>
+                         </select>
+                      </div>
+                    </div>
+                     <div class="clearfix">
+                      <div class="input">
+                        <select name="pbudge" class="input-medium">
+                              <option value=""> Select Project Budget </option>
+                                <option value="$500 - $1000">$500 - $1000</option>
+                                <option value="$1000 - $3000">$1000 - $3000</option>
+                                <option value="$3000 - $5000">$3000 - $5000</option>
+                                <option value="$5000 - $10000">$5000 - $10000</option>
+                                <option value="$10000 - $20000">$10000 - $20000</option>
+                                <option value="$20000 - $50000">$20000 - $50000</option>
+                                <option value="$50000 +">$50000 +</option>
+                         </select>
+                      </div>
+                    </div>
+
+                     <div class="clearfix">
+                      <div class="input">
+                        <textarea rows="10" id="inputDesc" placeholder="Project Details"></textarea>
+                      </div>
+                    </div>
+                    <div class="actions">
+                      <input class="button alert" type="submit" value="Send">
+                    </div>
+
+                </form>
+    <a class="close-reveal-modal">&#215;</a>
+  </div>
+
+  <!--
+  <script src="/public/vendors/jquery/jquery-1.11.1.min.js"></script>
+  -->
+  <script src="/public/c/webcommon.js"></script>
+  <script src="/public/vendors/foundation/js/vendor/fastclick.js"></script>
+  <script src="/public/vendors/foundation/js/foundation.min.js"></script>
+
+  <script src="/public/vendors/jquery_plugins/jquery.easing.min.js"></script>
+  <script src="/public/vendors/jquery_plugins/jquery-scrollspy.js"></script>
+
+  <script src="/public/vendors/headjs/head.min.js"></script>
+  <script src="/public/vendors/revealjs/reveal.min.js"></script>
+  <script src="/public/vendors/classlist/classList.min.js"></script>
+  <script src="/public/vendors/fancybox/lib/jquery.fancybox.pack.js"></script>
+
+  <script>
     $(document).foundation();
   </script>
   <script src="/public/scripts/main/site.js"></script>
