@@ -1,13 +1,7 @@
 <!DOCTYPE html>
-
-<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
-<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
-<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
-<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<html lang="en">
 
 <head>
-
   <title>Cherimoia | Mobile &amp; Web Applications</title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -16,190 +10,120 @@
   <meta name="description" content=""/>
   <meta name="keywords" content="" />
 
-  <link rel="stylesheet" href="/public/vendors/foundation/css/normalize.css"/>
-  <link rel="stylesheet" href="/public/vendors/foundation/css/foundation.min.css"/>
-  <link rel="stylesheet" media="screen" href="/public/c/webcommon.css"/>
+  <link rel="stylesheet" href="/public/vendors/bootstrap/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="/public/c/webcommon.css"/>
 
-  <link rel="stylesheet" media="screen" href="/public/vendors/font-awesome/css/font-awesome.min.css"/>
-  <link rel="stylesheet" href="/public/vendors/revealjs/css/reveal.min.css" />
-  <link rel="stylesheet" media="screen" href="/public/vendors/fancybox/css/jquery.fancybox.css" />
-  <link rel="stylesheet" href="/public/vendors/fancybox/css/jquery.fancybox-buttons.css" />
-  <link rel="stylesheet" href="/public/vendors/animate/animate.css" >
+  <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' />
+  <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' />
 
-  <link rel="stylesheet" media="screen" href="/public/styles/main/site.css"/>
-
-  <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'/>
-  <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'/>
+  <link rel="stylesheet" href="/public/vendors/font-awesome/css/font-awesome.min.css"/>
+  <link rel="stylesheet" href="/public/styles/main/site.css"/>
   <link rel="shortcut icon" type="image/png" href="/public/media/favicon.png"/>
-
-  <script type="text/javascript" src="/public/vendors/foundation/js/vendor/modernizr.js"></script>
+  <script src="/public/vendors/modernizr/modernizr.custom.js"></script>
 
 </head>
 
-<body >
+<body id="page-top" data-spy="scroll" data-target=".navbar-custom">
 
-<div class="wrapper" ><!-- begin wrapper -->
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="#page-top">
+                    <i class="fa fa-play-circle"></i>  <span class="light">Start</span> Bootstrap
+                </a>
+            </div>
 
-    <div class="fixed nav-custom"> <!-- begin top-bar -->
-      <nav class="top-bar row">
-        <ul class="title-area">
-          <li class="name"></li>
-          <li class="toggle-topbar menu-icon"><a href="index.html#"><span>Menu</span></a></li>
-        </ul>
-        <section class="top-bar-section">
-          <ul class="right" id="top-nav">
-            <li ><a href="index.html#home" id="home-link" class="nav-link" > HOME</a></li>
-            <li ><a href="index.html#about" id="about-link" class="nav-link" > ABOUT</a></li>
-            <li ><a href="index.html#contact" id="contact-link" class="nav-link"> CONTACT</a></li>
-          </ul>
-        </section>
-      </nav>
-    </div> <!-- end top-bar -->
-
-
-    <section id="home" class="page-section">
-      <div class="row">
-        <div class="small-12 large-12 columns text-center">
-          <h2 class="section-title">xxx</h2>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#about">About</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#download">Download</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
         </div>
-      </div>
-      <div class="row section-content">
-        <div class="small-12 large-8 columns page-scroll">
-          <a href="#about" class="btn btn-circle">
-            <i class="fa fa-angle-double-down animated"></i>
-          </a>
+        <!-- /.container -->
+    </nav>
+
+    <section class="intro">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h1 class="brand-heading">Grayscale</h1>
+                        <p class="intro-text">A free, premium quality, responsive one page Bootstrap theme created by Start Bootstrap.</p>
+                        <div class="page-scroll">
+                            <a href="#about" class="btn btn-circle">
+                                <i class="fa fa-angle-double-down animated"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
     </section>
 
-
-    <hr />
-
-    <section id="about" class="page-section">
-      <div class="row">
-        <div class="small-12 large-12 columns text-center">
-          <h2 class="section-title">A LITTLE  ABOUT US</h2>
+    <section id="about" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>About Grayscale</h2>
+                <p>Grayscale is a premium quality, free Bootstrap 3 theme created by Start Bootstrap. It can be yours right now, all you need to do is download the template on the preview page. You can use this template for any purpose, personal or commercial.</p>
+                <p>This striking, black and white theme features stock photographs by <a href="http://gratisography.com/">Gratisography</a> along with a custom Google Map skin courtesy of <a href="http://snazzymaps.com/">Snazzy Maps</a>.</p>
+                <p>With this template, just the slightest splash of color can make a huge impact on the overall presentation and design.</p>
+            </div>
         </div>
-      </div>
-      <div class="row section-content">
-        <div class="small-12 large-8 columns">
-          <p>Grayscale is a premium quality, free Bootstrap 3 theme created by Start Bootstrap. It can be yours right now, all you need to do is download the template on the preview page. You can use this template for any purpose, personal or commercial.</p>
-          <p>This striking, black and white theme features stock photographs by <a href="http://gratisography.com/">Gratisography</a> along with a custom Google Map skin courtesy of <a href="http://snazzymaps.com/">Snazzy Maps</a>.</p>
-          <p>With this template, just the slightest splash of color can make a huge impact on the overall presentation and design.</p>
-        </div>
-      </div>
     </section>
 
-    <hr />
-
-    <section id="contact" class="page-section">
-      <!-- Google Maps container starts here -->
-      <div class="row">
-      <h2 class="section-title text-center">Contact Us</h2>
-      <div class="col-sm-12 col-md-12">
-        <div class="map-container">
-          <div class="gmapfixed_block">
-            <div id="googlemaps" class="google-map google-map-full"></div>
-          </div>
+    <section id="download" class="content-section text-center">
+        <div class="download-section">
+            <div class="container">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <h2>Download Grayscale</h2>
+                    <p>You can download Grayscale for free on the download page at Start Bootstrap. You can also get the source code directly from GitHub if you prefer. Additionally, Grayscale is the first Start Bootstrap theme to come with a LESS file for easy color customization!</p>
+                    <a href="http://startbootstrap.com/grayscale" class="btn btn-default btn-lg">Visit Download Page</a>
+                </div>
+            </div>
         </div>
-      </div>
-      </div>
-      <!-- Google Maps container End here -->
-
-      <div class="row">
-        <div class="small-12 large-4  large-offset-2 columns page-section">
-          <h3>Contact Info</h3>
-          <p>
-            <b>Company Name</b>
-          </p>
-          <p>
-            30 South Park Avenue <br />
-
-            San Francisco, CA 94108, USA<br />
-
-            Phone: (123) 456-7890<br />
-
-            Fax: +08 (123) 456-7890<br />
-
-            Email: contact@companyname.com<br />
-
-            Web: companyname.com<br />
-          </p>
-                  <div class="social-link-small">
-            <a href="index.html#" class="button secondary btn-gray icon-round"><i class="icon-facebook"></i></a>
-            <a href="index.html#" class="button secondary btn-gray icon-round"><i class="icon-twitter"></i></a>
-            <a href="index.html#" class="button secondary btn-gray icon-round"><i class="icon-linkedin"></i></a>
-            <a href="index.html#" class="button secondary btn-gray icon-round"><i class="icon-pinterest"></i></a>
-          </div>
-      </div>
-
-      <!--Contact form Start here-->
-      <div class="small-12 large-6 columns page-section">
-         <div class="widget">
-        <h4>Contact us</h4>
-          <form class="contactform" data-abide>
-                    <div class="item item-pair">
-                      <label for="FullName">Full Name
-                        <input type="text" name="FullName" id="FullName" class="small-input cat_textbox" required   pattern="[a-zA-Z]+"  maxlength="255">
-                         <small class="error small-input">Name is required and must be a string.</small>
-                      </label>
-                      <label for="EmailAddress">Email Address
-                        <input type="text" name="EmailAddress" id="EmailAddress" class="small-input cat_textbox" maxlength="255" required  >
-                         <small class="error small-input">An email address is required.</small>
-                      </label>
-                    </div>
-                    <div class="item">
-                      <label for="Website">Website
-                        <input type="text" name="Website" id="Website" class="small-input cat_textbox" maxlength="255">
-                      </label>
-                    </div>
-                    <div class="item">
-                      <label>Comments</label>
-                      <textarea  cols="10" name="Msg" rows="4" class="cat_listbox" required ></textarea>
-                      <small class="error">Please enter your comments</small>
-                    </div>
-                    <div class="item">
-                      <input class="button alert small" type="submit" value="Submit" id="catwebformbutton">
-                    </div>
-                  </form>
-        </div>
-      </div>
-      <!--Contact form End here-->
-      </div> <!--End .row-->
     </section>
-    <!--Contact End here-->
 
+    <section id="contact" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>Contact Start Bootstrap</h2>
+                <p>Feel free to email us to provide some feedback on our templates, give us suggestions for new templates and themes, or to just say hello!</p>
+                <p>feedback@startbootstrap.com</p>
+                <ul class="list-inline banner-social-buttons">
+                    <li><a href="https://twitter.com/SBootstrap" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
+                    </li>
+                    <li><a href="https://github.com/IronSummitMedia/startbootstrap" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
+                    </li>
+                    <li><a href="https://plus.google.com/+Startbootstrap/posts" class="btn btn-default btn-lg"><i class="fa fa-google-plus fa-fw"></i> <span class="network-name">Google+</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
 
-    <footer class="footer">
-      <p class="text-center">
-        Copyright © <a href="index.html#">http://www.cherimoia.com</a>
-      </p>
-    </footer>
-
-
-  </div><!-- end wrapper -->
-
-
-
-  <!--
-  <script src="/public/vendors/jquery/jquery-1.11.1.min.js"></script>
-  -->
   <script src="/public/c/webcommon.js"></script>
-  <script src="/public/vendors/foundation/js/vendor/fastclick.js"></script>
-  <script src="/public/vendors/foundation/js/foundation.min.js"></script>
-
+  <script src="/public/vendors/bootstrap/js/bootstrap.min.js"></script>
   <script src="/public/vendors/jquery_plugins/jquery.easing.min.js"></script>
-  <script src="/public/vendors/jquery_plugins/jquery-scrollspy.js"></script>
-
-  <script src="/public/vendors/headjs/head.min.js"></script>
-  <script src="/public/vendors/revealjs/reveal.min.js"></script>
-  <script src="/public/vendors/classlist/classList.min.js"></script>
-  <script src="/public/vendors/fancybox/lib/jquery.fancybox.pack.js"></script>
-
-  <script>
-    $(document).foundation();
-  </script>
   <script src="/public/scripts/main/site.js"></script>
 
+
 </body>
+
 </html>
