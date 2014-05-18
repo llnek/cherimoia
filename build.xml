@@ -124,6 +124,7 @@
   <target name="clean-public">
     <delete includeemptydirs="true">
       <fileset erroronmissingdir="false" dir="${basedir}/public/scripts" includes="**/*"/>
+      <fileset erroronmissingdir="false" dir="${basedir}/public/pages" includes="**/*"/>
       <fileset erroronmissingdir="false" dir="${basedir}/public/styles" includes="**/*"/>
     </delete>
   </target>
