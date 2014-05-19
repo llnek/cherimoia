@@ -18,13 +18,15 @@ $navBarFonts: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
 $btnFonts: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
 
 //$navBarBgColor: #99979c;
-$navBarBgColor: #3d495f;
+//$navBarBgColor: #3d495f;
+$navBarBgColor: #000;
 
-$bodyBgColor: #e26a6a;
+//$bodyBgColor: #e26a6a;
+$bodyBgColor: #505863;
 $bodyColor: #fff;
 
-$linkOtherColor: #176e61;
-$linkColor: #28c3ab;
+$linkOtherColor: #f7ad02;
+$linkColor: #99d5f1;
 $pgFontSize: 18px;
 
 
@@ -150,8 +152,8 @@ a {
 }
 
 .intro {
-  background: url(../img/intro-bg.jpg) no-repeat bottom center scroll;
-  background-color: #000;
+  background: url(/public/media/main/cherimoia.png) no-repeat center bottom scroll;
+  background-color: $bodyBgColor;
   background-size: cover;
   text-align: center;
   display: table;
@@ -270,18 +272,6 @@ a {
   padding-top: 100px;
 }
 
-.download-section {
-    width: 100%;
-    padding: 50px 0;
-    color: #fff;
-    background: url(../img/downloads-bg.jpg) no-repeat center center scroll;
-    background-color: #000;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-}
-
 .btn {
   -webkit-transition: all .3s ease-in-out;
   -moz-transition: all .3s ease-in-out;
@@ -294,15 +284,16 @@ a {
 .btn-default {
 
   background-color: transparent;
-  border: 1px solid #28c3ab;
-  color: #28c3ab;
+  border: 1px solid $linkColor;
+  color: $linkColor;
 
   &:hover,
   &:focus {
-    border: 1px solid #28c3ab;
+    border: 1px solid $linkOtherColor;
     outline: 0;
     color: #000;
-    background-color: #28c3ab;
+    color: #fff;
+    background-color: $linkOtherColor;
   }
 
 }
@@ -314,6 +305,7 @@ a {
 
 .banner-social-buttons {
   margin-top: 0;
+  color: #fff;
 }
 
 ::-moz-selection {
@@ -352,7 +344,7 @@ img::-moz-selection {
   }
 
   .top-nav-collapse {
-    background-color: #000;
+    background-color: $navBarBgColor;
     padding: 0;
   }
 
@@ -383,10 +375,6 @@ img::-moz-selection {
 
   .content-section {
     padding-top: 250px;
-  }
-
-  .download-section {
-    padding: 100px 0;
   }
 
 }
