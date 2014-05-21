@@ -126,6 +126,7 @@
       <fileset erroronmissingdir="false" dir="${basedir}/public/scripts" includes="**/*"/>
       <fileset erroronmissingdir="false" dir="${basedir}/public/pages" includes="**/*"/>
       <fileset erroronmissingdir="false" dir="${basedir}/public/styles" includes="**/*"/>
+      <fileset erroronmissingdir="false" dir="${basedir}/public/media" includes="**/*"/>
     </delete>
   </target>
 

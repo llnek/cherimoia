@@ -22,7 +22,8 @@ $btnFonts: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
 $navBarBgColor: #333;
 
 //$bodyBgColor: #e26a6a;
-$bodyBgColor: #505863;
+//$bodyBgColor: #505863;
+$bodyBgColor: #5b6471;
 $bodyColor: #fff;
 
 $linkOtherColor: #f7ad02;
@@ -154,7 +155,7 @@ a {
 }
 
 .intro {
-  background: url(/public/media/main/cherimoia.jpg) no-repeat center bottom scroll;
+  background: url(/public/media/main/bg.png) no-repeat center bottom scroll;
   background-color: $bodyBgColor;
   background-size: cover;
   text-align: center;
