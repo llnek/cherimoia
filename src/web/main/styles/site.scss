@@ -22,8 +22,9 @@ $btnFonts: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
 $navBarBgColor: #333;
 
 //$bodyBgColor: #e26a6a;
-//$bodyBgColor: #505863;
-$bodyBgColor: #5b6471;
+//$bodyBgColor: #5b6471;
+$bodyBgColor: #1461a2;
+
 $bodyColor: #fff;
 
 $linkOtherColor: #f7ad02;
@@ -39,6 +40,7 @@ html {
 }
 
 body {
+  background: url('/public/media/main/crosslines-pattern.png') repeat;
   webkit-tap-highlight-color: rgba(255,255,255,.2);
   background-color: $bodyBgColor;
   font-family: $bodyFonts;
@@ -156,7 +158,7 @@ a {
 
 .intro {
   background: url(/public/media/main/bg.png) no-repeat center bottom scroll;
-  background-color: $bodyBgColor;
+  //background-color: $bodyBgColor;
   background-size: cover;
   text-align: center;
   display: table;
