@@ -1,15 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html class="no-js">
 <head>
-  <title>Cherimoia | Mobile &amp; Web Applications</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" >
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-  <meta charset="utf-8"/>
-  <meta name="description" content=""/>
-  <meta name="keywords" content="" />
+	<title>Cherimoia | Mobile &amp; Cloud</title>
 
+  <link rel="shortcut icon" type="image/png" href="/public/ig/media/main/favicon.png"/>
   <link rel="stylesheet" href="/public/vendors/bootstrap/css/bootstrap.min.css"/>
   <link rel="stylesheet" href="/public/c/webcommon.css"/>
 
@@ -18,132 +16,217 @@
 
   <link rel="stylesheet" href="/public/vendors/font-awesome/css/font-awesome.min.css"/>
   <link rel="stylesheet" href="/public/styles/main/site.css"/>
-  <link rel="shortcut icon" type="image/png" href="/public/media/main/favicon.png"/>
-  <script src="/public/vendors/modernizr/modernizr.custom.js"></script>
 
+  <script src="/public/vendors/modernizr/modernizr.custom.47152.js"></script>
+
+	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
 </head>
 
-<body id="page-top" data-spy="scroll" data-target=".navbar-custom">
 
-  <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
-    <div class="container"><!-- begin container -->
+<body data-spy="scroll" data-target="#my-nav">
 
-      <div class="navbar-header page-scroll">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-              <i class="fa fa-bars"></i>
-          </button>
-          <a class="navbar-brand" href="#page-top">
-              <i class="fa fa-cloud"></i>  <span class="light">Home</span>
-          </a>
-      </div>
+<!-- Navigation Bar -->
+<div class="navbar navbar-fixed-top">
+	<div class="container">
 
-      <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-          <ul class="nav navbar-nav">
+		<div class="navbar-header">
+			<a class="navbar-brand" href="#"><img class="XXlogo" src="/public/media/main/cherimoia-logo-150x50.png" alt=""></a>
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+		</div>
 
-              <!-- hidden li included to remove active class from
-                   about link when scrolled up past about section -->
+		<nav id="my-nav" class="navbar-collapse collapse" role="navigation">
+			<ul class="nav navbar-nav">
+				<li class="active"><a href="#about">About</a></li>
+				<li><a href="#services">Services</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</nav><!--/.navbar-collapse -->
 
-              <li class="hidden"> <a href="#page-top"></a> </li>
+	</div>
+</div>
+<!-- End of Navigation Bar -->
 
-              <li class="page-scroll"> <a href="#about">About</a> </li>
-              <li class="page-scroll"> <a href="#services">Services</a> </li>
-              <li class="page-scroll"> <a href="#contact">Contact</a> </li>
-          </ul>
-      </div>
 
-    </div><!-- end container -->
-  </nav>
+<!-- Welcome Section -->
+<section id="welcome" class="welcome-section Xphoto-section Xdark-section Xlight-content Xparallax">
+	<div class="XXbg-overlay"></div>
+	<div class="container">
+		<div class="content-wrapper">
+			<div class="welcome-content">
+        <!-- 
+				<h1 class="special-heading light-special">We are Crafto</h1>
+				<p>
+					<span>Our daily purpose is to build your web experience by</span>
+					<span class="rotating-words">creating your image, building your presence, boosting your income</span>
+				</p>
+				<div class="social-icons light-icons">
+					<a href="index.html#"><i class="fa fa-facebook"></i></a>
+					<a href="index.html#"><i class="fa fa-twitter"></i></a>
+					<a href="index.html#"><i class="fa fa-linkedin"></i></a>
+					<a href="index.html#"><i class="fa fa-pinterest"></i></a>
+					<a href="index.html#"><i class="fa fa-google-plus"></i></a>
+				</div>
+				<div class="scroll-more">
+					<span>Scroll down</span>
+					<i class="scroll-arrow"></i>
+				</div>
+        -->
 
-  <section class="intro">
-    <div class="intro-body">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8 col-md-offset-2">
-                  <p class="intro-text"></p>
-                </div>
-            </div>
-        </div>
-    </div>
-  </section>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- End of Welcome Section -->
 
-  <section id="about" class="container content-section text-center">
-    <div class="row">
-      <div class="col-lg-8 col-lg-offset-2">
-
+<!-- Portfolio Section -->
+<section id="about" class="portfolio-section Xlight-section Xdark-content">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8 col-md-offset-2">
+        <h1>&nbsp;</h1>
           <h2>About Cherimoia</h2>
           <p>We are a small team of expert software developers who are passionate about mobile and web technologies.</p>
+			</div>
+		</div>
 
-      </div>
-    </div>
-  </section>
+	</div>
+</section>
+<!-- End of Portfolio Section -->
 
-  <section id="services" class="container content-section text-center">
-    <div class="row">
-      <div class="col-lg-8 col-lg-offset-2">
+
+<!-- Services Section -->
+<section id="services" class="Xparallax services-section Xphoto-section Xdark-section Xlight-content">
+<div class="container">
+		<div class="row">
+			<div class="col-md-8 col-md-offset-2">
 
           <h2>Services</h2>
           <p>Our team specializes in crafting stunning mobile and web applications, both for consumers and enterprises.</p>
-      </div>
-    </div>
-  </section>
 
-  <section id="contact" class="container content-section text-center">
-    <div class="row">
-      <div class="col-lg-8 col-lg-offset-2">
+			</div>
+		</div>
 
-          <h2>Contact Us</h2>
-          <p>If you're interested to know more about us, drop us a line.</p>
-          <p><a href="mailto:info@cherimoia.com">info@cherimoia.com</a></p>
+	</div>
+</section>
+<!-- End of Services Section -->
 
-      </div>
-    </div>
-  </section>
 
-  <footer>
-    <section class="container text-center">
-        <div class="row">
-          <div class="col-lg-8 col-lg-offset-2">
+<!-- Contact Section -->
+<section id="contact" class="contact-section Xlight-section Xdark-content">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8 col-md-offset-2">
+				<h1 class="special-heading Xdark-special">If you're interested to know more about us, drop us a line.</h1>
+        <!-- 
+				<div class="row contact-informations">
+					<div class="col-sm-4">
+						<div class="contact-info clearfix">
+							<i class="fa fa-map-marker"></i>
+							<span>Freedom Street, 245<br>Amsterdam</span>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="contact-info clearfix">
+							<i class="fa fa-envelope"></i>
+							<span>contact@mysite.com</span>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="contact-info clearfix">
+							<i class="fa fa-phone"></i>
+							<span>235 214 2326</span>
+						</div>
+					</div>
+				</div>
+        -->
+			</div>
+		</div>
+		<div class="row">
 
-              <ul class="list-inline banner-social-buttons">
+			<div class="col-md-8 col-md-offset-2">
 
-                <li><a href="http://www.cherimoia.com" class="">
-                  <i class="fa fa-twitter fa-5x"></i>
-                </li>
+				<div id="result"></div>
 
-                <li><a href="http://www.cherimoia.com" class="">
-                  <i class="fa fa-facebook fa-5x"></i>
-                </li>
+				<form id="contact_form" class="contact-form" action="http://www.pixelglow.ro/themes/crafto-html/contact.php" method="post">
+					<div class="row">
+						<div class="col-md-6">
+							<div class="form-group">
+								<input type="text" class="form-control input-lg" id="nameinput" placeholder="Name" name="name">
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<input type="email" class="form-control input-lg" id="emailinput" placeholder="Email" name="email">
+							</div>
+						</div>
+					</div>
+					<div class="form-group">
+						<textarea class="form-control" rows="10" name="message" placeholder="Message"></textarea>
+					</div>
+					<div class="form-group">
+						<input type="text" class="form-control input-lg" id="humaninput" placeholder="5 + 2 =" name="human">
+					</div>
+					<div class="form-group">
+						<button id="submit_btn" type="submit" class="btn btn-outline-white btn-big">Submit</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- End of Contact Section -->
 
-                <li><a href="http://www.cherimoia.com" class="">
-                  <i class="fa fa-google-plus fa-5x"></i>
-                </li>
 
-              </ul>
+<!-- Footer -->
+<!--
+<section id="map" class="map-section" data-lat="32.6992" data-long="-117.1128" data-zoom="17" data-map-type="satellite">
+<div id="map-canvas" style="width:100%; height:400px;" class="googleMap"></div> 
+</section>
+-->
 
-              <div class="site-info">
-                <p>Copyright &copy; 2013-2014 Cherimoia, LLC.  All rights reserved.</p>
-              </div>
-          </div>
-        </div>
-    </section>
+<!-- Footer -->
+<footer class="footer Xphoto-section Xdark-section Xlight-content">
+	<div class="bg-overlay"></div>
+	<div class="container">
+		<div class="social-icons light-icons">
+			<a href="index.html#"><i class="fa fa-facebook"></i></a>
+			<a href="index.html#"><i class="fa fa-twitter"></i></a>
+			<a href="index.html#"><i class="fa fa-google-plus"></i></a>
+		</div>
+		<p>Copyright &copy; 2013-2014 Cherimoia, LLC.  All rights reserved.</p>
+	</div>
+</footer>
 
-    <section class="container site-info">
-      <div class="row pull-right">
-        <div class="col-lg-12 site-info">
-          <img alt="cherimoia.logo" src="/public/media/main/logo-small.png"></img>
-        </div>
-      </div>
-    </section>
+<div class="scrolltotop">
+	<i class="fa fa-chevron-up"></i>
+</div>
+<!-- End of Footer -->
 
-  </footer>
 
+<!-- Bootstrap core JavaScript
+
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
   <script src="/public/c/webcommon.js"></script>
   <script src="/public/vendors/bootstrap/js/bootstrap.min.js"></script>
   <script src="/public/vendors/jquery_plugins/jquery.easing.min.js"></script>
-  <script src="/public/scripts/main/site.js"></script>
 
-
+<script src="/public/vendors/modernizr/modernizr-ie.js"></script>
+<script src="/public/vendors/helpers/grid.js"></script>
+<script src="/public/vendors/helpers/waypoints.min.js"></script>
+<script src="/public/vendors/jquery_plugins/jquery.textrotator.min.js"></script>
+<script src="/public/vendors/jquery_plugins/jquery.simple-text-rotator.min.js"></script>
+<script src="/public/vendors/jquery_plugins/jquery.nicescroll.min.js"></script>
+<script src="/public/vendors/helpers/slick.min.js"></script>
+<script src="/public/scripts/main/site.js"></script>
+	
 </body>
-
 </html>
-
