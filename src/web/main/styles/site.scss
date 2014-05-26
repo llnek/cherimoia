@@ -42,8 +42,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-  //font-family: 'Titillium Web', sans-serif;
+  //font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: 'Titillium Web', sans-serif;
 }
 
 
@@ -202,7 +202,7 @@ a {
 }
 
 
-.formctrl {
+.form-control {
 
   -webkit-transition: all 0.3s ease-out;
   -moz-transition: all 0.3s ease-out;
@@ -482,7 +482,8 @@ a {
     max-width: 700px;
 
     p {
-      font-family: 'Titillium Web', sans-serif;
+      //font-family: 'Titillium Web', sans-serif;
+      font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
       font-size: 1.35em;
       line-height: 1.25em;
       font-weight: 300;
@@ -541,7 +542,7 @@ a {
     .form-group {
       margin-bottom: 20px;
 
-      .formctrl {
+      .form-control {
 
         border: 3px solid #fff;
       }
