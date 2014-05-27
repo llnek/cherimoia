@@ -20,7 +20,6 @@
   (:require [clojure.data.json :as json])
   (:use [cmzlabsclj.tardis.core.constants])
   (:use [cmzlabsclj.tardis.core.wfs])
-  (:use [cmzlabsclj.tardis.core.wfs])
   (:use [cmzlabsclj.nucleus.util.str :only [strim] ])
 
   (:import ( com.zotohlabs.wflow FlowPoint Activity
