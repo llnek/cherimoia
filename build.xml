@@ -90,6 +90,15 @@
   </target>
 
   <target name="finz-build">
+
+    <!--
+    <delete file="${basedir}/public/c/webcommon.css" quiet="true"/>
+    <concat destfile="${basedir}/public/c/webcommon.css" append="true">
+      <fileset file="${basedir}/public/vendors/bootstrap/css/bootstrap.min.css"/>
+      <fileset file="${basedir}/public/vendors/font-awesome/css/font-awesome.min.css"/>
+    </concat>
+    -->
+
     <!--
     <delete file="${basedir}/public/c/webcommon.js" quiet="true"/>
     <concat destfile="${basedir}/public/c/webcommon.js" append="true">
@@ -97,7 +106,12 @@
       <fileset file="${basedir}/public/vendors/jquery/jquery-2.1.1.min.js"/>
       <fileset file="${basedir}/public/vendors/l10njs/l10n.min.js"/>
       <fileset file="${basedir}/public/vendors/mustache/mustache.js"/>
-      <fileset file="${basedir}/public/vendors/dbg/dbg.js"/>
+      <fileset file="${basedir}/public/vendors/helpers/dbg.js"/>
+      <fileset file="${basedir}/public/vendors/bootstrap/js/bootstrap.min.js"/>
+      <fileset file="${basedir}/public/vendors/jquery_plugins/jquery.easing.min.js"/>
+      <fileset file="${basedir}/public/vendors/modernizr/modernizr-ie.js"/>
+      <fileset file="${basedir}/public/vendors/helpers/waypoints.min.js"/>
+      <fileset file="${basedir}/public/vendors/jquery_plugins/jquery.nicescroll.min.js"/>
     </concat>
 -->
   </target>

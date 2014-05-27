@@ -17,12 +17,14 @@
 
   (:require [clojure.tools.logging :as log :only (info warn error debug)])
   (:require [clojure.string :as cstr])
+  (:require [clojure.data.json :as json])
   (:use [cmzlabsclj.tardis.core.constants])
   (:use [cmzlabsclj.tardis.core.wfs])
 
   (:import ( com.zotohlabs.wflow FlowPoint Activity
                                  Pipeline PipelineDelegate PTask Work))
   (:import (com.zotohlabs.gallifrey.io HTTPEvent HTTPResult Emitter))
+  (:import (com.zotohlabs.frwk.io XData))
   (:import (com.zotohlabs.wflow.core Job))
   (:import (java.util HashMap Map)))
 
@@ -68,11 +70,44 @@
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;
+(defn- handleContactMsg ""
+
+  ^PTask
+  []
+
+  (DefWFTask
+    (fn [fw ^Job job arg]
+      (let [ ^HTTPEvent evt (.event job)
+             json { :status true :msg "Thank you." }
+             jsonStr (json/write-str json)
+             ^HTTPResult res (.getResultObj evt) ]
+        (.setHeader res "content-type" "application/json")
+        (.setContent res (XData. jsonStr))
+        (.setStatus res 200)
+        (.replyResult evt)))
+  ))
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;
 (deftype LandingHandler [] PipelineDelegate
 
   (getStartActivity [_  pipe]
     (require 'com.cherimoia.site.core)
     (doShowLandingPage))
+
+  (onStop [_ pipe]
+    (log/info "nothing to be done here, just stop please."))
+
+  (onError [ _ err curPt]
+    (log/info "Oops, I got an error!")))
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;
+(deftype ContactHandler [] PipelineDelegate
+
+  (getStartActivity [_  pipe]
+    (require 'com.cherimoia.site.core)
+    (handleContactMsg))
 
   (onStop [_ pipe]
     (log/info "nothing to be done here, just stop please."))
