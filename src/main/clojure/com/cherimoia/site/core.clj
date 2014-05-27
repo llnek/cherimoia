@@ -20,10 +20,13 @@
   (:require [clojure.data.json :as json])
   (:use [cmzlabsclj.tardis.core.constants])
   (:use [cmzlabsclj.tardis.core.wfs])
+  (:use [cmzlabsclj.tardis.core.wfs])
+  (:use [cmzlabsclj.nucleus.util.str :only [strim] ])
 
   (:import ( com.zotohlabs.wflow FlowPoint Activity
                                  Pipeline PipelineDelegate PTask Work))
   (:import (com.zotohlabs.gallifrey.io HTTPEvent HTTPResult Emitter))
+  (:import (com.zotohlabs.frwk.net ULFormItems ULFileItem))
   (:import (com.zotohlabs.frwk.io XData))
   (:import (com.zotohlabs.wflow.core Job))
   (:import (java.util HashMap Map)))
@@ -77,14 +80,27 @@
 
   (DefWFTask
     (fn [fw ^Job job arg]
-      (let [ ^HTTPEvent evt (.event job)
-             json { :status true :msg "Thank you." }
-             jsonStr (json/write-str json)
+      (let [
+             jsonE { :status false :msg "Error while submitting your message." }
+             jsonG { :status true :msg "Thank you." }
+             ^HTTPEvent evt (.event job)
+             data (-> (.data evt)(.content))
              ^HTTPResult res (.getResultObj evt) ]
+
         (.setHeader res "content-type" "application/json")
-        (.setContent res (XData. jsonStr))
+        (cond
+          (instance? ULFormItems data)
+          (let [ itms (.asMap ^ULFormItems data)
+                 n (.get itms "userHuman")
+                 s (strim (if (nil? n) "" (.getString n))) ]
+            (if (= s "38")
+                (.setContent res (XData. (json/write-str jsonG)))
+                (.setContent res (XData. (json/write-str jsonE)))))
+          :else
+          (.setContent res (XData. (json/write-str jsonE))))
         (.setStatus res 200)
         (.replyResult evt)))
+
   ))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;

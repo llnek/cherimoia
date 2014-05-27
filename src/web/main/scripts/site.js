@@ -74,7 +74,7 @@ function onsubmitcontactmsg(evt) {
         $('#contact_form input').val('');
       } else {
         output = '<div class="error">' + res.msg + '</div>';
-        $('#submit_btn').remove('i').text('Submit');
+        $('#submit_btn').remove('i').text('Send');
       }
       $("#feedback").hide().html(output).slideDown();
     };
